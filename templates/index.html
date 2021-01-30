@@ -1,0 +1,26 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <title>Felix Development, Consulting and Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+    <header class="fd-header">
+        <nav>
+            <ul class="fd-menu-list">
+                <li class="fd-menu-item"><a href="/">Home</a></li>
+                <li class="fd-menu-item"><a href="/">Courses</a></li>
+                <li class="fd-menu-item"><a href="/">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="fd-content">
+        <h1>{{ home_caption }}</h1>
+        {{ home_content }}
+    </div>
+    <footer class="fd-footer">Felix Development, Consulting and Services - Contact: Felix Lüpke &lt;lpke.lfx@gmail.com&gt;</footer>
+</body>
+
+</html>
