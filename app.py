@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, Markup
 
 app = Flask(__name__)
 
@@ -6,7 +6,8 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     home_caption = "Free database migration tool"
-    home_content = """
+    home_content = (
+        """
         ImeoDBM is a java based tool we provide for easiely migrating data from one database to another. 
         In the current version we try to offer a simple API especially for encapsulating data reads and writes from and to a MySQL. 
         Our goal is to provide a simple and efficient converting mechanism from database 
@@ -16,8 +17,13 @@ def home():
         advanced version of our software which can be purchased. This Version will include advanced functionality, 
         stable and experimental API and other special features. If you have any questions or want to suggest something 
         we should include in future updates, feel free do contact us at lpke.flx@gmail.com. 
-        The tool can be downloaded <a href="https://github.com/flikkes/felix-db-migration-tool/releases">here</a>.
+        The tool can be downloaded """
+        + Markup(
+            '<a href="https://github.com/flikkes/felix-db-migration-tool/releases">here</a>'
+        )
+        + """.
     """
+    )
     return render_template(
         "index.html", home_caption=home_caption, home_content=home_content
     )
@@ -26,7 +32,8 @@ def home():
 @app.route("/products")
 def products():
     products_caption = "Free database migration tool"
-    products_content = """
+    products_content = (
+        """
         ImeoDBM is a java based tool we provide for easiely migrating data from one database to another. 
         In the current version we try to offer a simple API especially for encapsulating data reads and writes from and to a MySQL. 
         Our goal is to provide a simple and efficient converting mechanism from database 
@@ -36,8 +43,13 @@ def products():
         advanced version of our software which can be purchased. This Version will include advanced functionality, 
         stable and experimental API and other special features. If you have any questions or want to suggest something 
         we should include in future updates, feel free do contact us at lpke.flx@gmail.com. 
-        The tool can be downloaded <a href="https://github.com/flikkes/felix-db-migration-tool/releases">here</a>.
+        The tool can be downloaded """
+        + Markup(
+            '<a href="https://github.com/flikkes/felix-db-migration-tool/releases">here</a>'
+        )
+        + """.
     """
+    )
     return render_template(
         "index.html", home_caption=products_caption, home_content=products_content
     )
