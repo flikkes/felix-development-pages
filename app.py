@@ -8,7 +8,7 @@ Talisman(app)
 @app.route("/")
 def home():
     home_caption = "Free database migration tool"
-    home_content = (
+    home_content = Markup(
         """
         Felix-db-migration-tool is a java based tool we provide for easiely migrating data from one database to another. 
         In the current version we try to offer a simple API especially for encapsulating data reads and writes from and to a MySQL. 
@@ -19,11 +19,7 @@ def home():
         advanced version of our software which can be purchased. This Version will include advanced functionality, 
         stable and experimental API and other special features. If you have any questions or want to suggest something 
         we should include in future updates, feel free do contact us at lpke.flx@gmail.com. 
-        The tool can be downloaded """
-        + Markup(
-            '<a target="_blank" href="https://github.com/flikkes/felix-db-migration-tool/releases">here</a>'
-        )
-        + """.
+        The tool can be downloaded <a target="_blank" href="https://github.com/flikkes/felix-db-migration-tool/releases">here</a>.
     """
     )
     return render_template(
@@ -34,7 +30,7 @@ def home():
 @app.route("/products")
 def products():
     products_caption = "Free database migration tool"
-    products_content = (
+    products_content = Markup(
         """
         Felix-db-migration-tool is a java based tool we provide for easiely migrating data from one database to another. 
         In the current version we try to offer a simple API especially for encapsulating data reads and writes from and to a MySQL. 
@@ -45,11 +41,7 @@ def products():
         advanced version of our software which can be purchased. This Version will include advanced functionality, 
         stable and experimental API and other special features. If you have any questions or want to suggest something 
         we should include in future updates, feel free do contact us at lpke.flx@gmail.com. 
-        The tool can be downloaded """
-        + Markup(
-            '<a target="_blank" href="https://github.com/flikkes/felix-db-migration-tool/releases">here</a>'
-        )
-        + """.
+        The tool can be downloaded <a target="_blank" href="https://github.com/flikkes/felix-db-migration-tool/releases">here</a>.
     """
     )
     return render_template(
