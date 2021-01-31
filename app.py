@@ -2,7 +2,7 @@ from flask import Flask, render_template, url_for, Markup
 from flask_talisman import Talisman
 
 app = Flask(__name__)
-Talisman(app)
+#Talisman(app)
 
 
 @app.route("/")
