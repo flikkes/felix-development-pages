@@ -19,7 +19,7 @@ def home():
         advanced version of the software which can be purchased. This Version will include advanced functionality, 
         stable and experimental API and other special features. If you have any questions or want to suggest something 
         I should include in future updates, feel free to contact me at lpke.flx@gmail.com. 
-        The tool can be downloaded <a target="_blank" href="https://github.com/flikkes/felix-db-migration-tool/releases">here</a>.
+        The tool can be downloaded <h3><a target="_blank" href="https://github.com/flikkes/felix-db-migration-tool/releases">here</a></h3>
     """
     )
     return render_template(
