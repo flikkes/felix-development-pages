@@ -7,6 +7,7 @@ Talisman(app)
 
 @app.route("/")
 def home():
+    active_link = "home"
     home_caption = "Welcome"
     home_content = Markup(
         """
@@ -15,12 +16,28 @@ def home():
         """
     )
     return render_template(
-        "index.html", home_caption=home_caption, home_content=home_content
+        "index.html", home_caption=home_caption, home_content=home_content, active_link=active_link
+    )
+
+
+@app.route("/courses")
+def courses():
+    active_link = "courses"
+    home_caption = "Welcome"
+    home_content = Markup(
+        """
+        Welcome to my development and consulting space. 
+        For more information, visit my <a href="/products">Products page</a>. 
+        """
+    )
+    return render_template(
+        "index.html", home_caption=home_caption, home_content=home_content, active_link=active_link
     )
 
 
 @app.route("/products")
 def products():
+    active_link = "products"
     products_caption = "Free database migration tool"
     products_content = Markup(
         """
@@ -39,5 +56,5 @@ def products():
         """
     )
     return render_template(
-        "index.html", home_caption=products_caption, home_content=products_content
+        "index.html", home_caption=products_caption, home_content=products_content, active_link=active_link
     )

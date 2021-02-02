@@ -8,15 +8,6 @@ body {
     margin: 0;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 90%;
-    text-align: center;
-    background-color: #77a6f7;
-    color: #ffffff;
-}
-
 a {
     text-decoration: none;
     color: #77a6f7;
@@ -86,6 +77,11 @@ li a:hover {
     overflow: hidden;
 }
 
+.fd-active-menu-item, .fd-active-menu-item:visited, .fd-active-menu-item:active, .fd-active-menu-item:hover {
+    background-color: #ffffff;
+    color: #77a6f7;
+}
+
 .fd-content {
     margin-left: auto;
     margin-right: auto;
@@ -103,6 +99,8 @@ li a:hover {
     bottom: 0;
     overflow: hidden;
     font-size: 9pt;
+    background-color: #77a6f7;
+    color: #ffffff;
 }
 
 @media screen and (max-width: 600px) {
