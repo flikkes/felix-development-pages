@@ -11,17 +11,23 @@
     <header class="fd-header">
         <nav>
             <ul class="fd-menu-list">
-                <li class="fd-menu-item"><a class="{{'fd-active-menu-item' if active_link == 'home'}}" href="/">Home</a></li>
-                <li class="fd-menu-item"><a class="{{'fd-active-menu-item' if active_link == 'courses'}}" href="/courses">Courses</a></li>
-                <li class="fd-menu-item"><a class="{{'fd-active-menu-item' if active_link == 'products'}}" href="/products">Products</a></li>
+                <li class="fd-menu-item"><a class="{{'fd-active-menu-item' if active_link == 'home'}}" href="/">Home</a>
+                </li>
+                <li class="fd-menu-item"><a class="{{'fd-active-menu-item' if active_link == 'courses'}}"
+                        href="/courses">Courses</a></li>
+                <li class="fd-menu-item"><a class="{{'fd-active-menu-item' if active_link == 'products'}}"
+                        href="/products">Products</a></li>
             </ul>
         </nav>
     </header>
-    <div class="fd-content">
-        <h1>{{ home_caption }}</h1>
-        {{ home_content }}
+    <div class="fd-content-wrapper">
+        <div class="fd-content">
+            <h1>{{ home_caption }}</h1>
+            {{ home_content }}
+        </div>
     </div>
-    <footer class="fd-footer">Felix Development and Consulting - Contact: Felix Lüpke &lt;lpke.flx@gmail.com&gt;</footer>
+    <footer class="fd-footer">Felix Development and Consulting - Contact: Felix Lüpke &lt;lpke.flx@gmail.com&gt;
+    </footer>
 </body>
 
 </html>

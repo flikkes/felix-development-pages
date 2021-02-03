@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+h1, h2, h3 {
+    text-align: left;
+}
+
 a {
     text-decoration: none;
     color: #77a6f7;
@@ -82,11 +86,16 @@ li a:hover {
     color: #77a6f7;
 }
 
+.fd-content-wrapper {
+    min-height: 95vh;
+}
+
 .fd-content {
     margin-left: auto;
     margin-right: auto;
     max-width: 600px;
     padding: 50px;
+    text-align: justify;
 }
 
 .fd-footer {
@@ -94,7 +103,6 @@ li a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    position: fixed;
     width: 100%;
     bottom: 0;
     overflow: hidden;
@@ -115,6 +123,3 @@ li a:hover {
         position: inherit;
     }
 }
-
-.fd-header {clear:both}
-.fd-footer {clear:both}
