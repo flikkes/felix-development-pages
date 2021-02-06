@@ -75,10 +75,8 @@ li a:hover {
     padding-top: 10px;
     padding-bottom: 20px;
     text-align: center;
-    position: fixed;
+    position: absolute;
     width: 100%;
-    top: 0;
-    overflow: hidden;
 }
 
 .fd-active-menu-item, .fd-active-menu-item:visited, .fd-active-menu-item:active, .fd-active-menu-item:hover {
@@ -104,8 +102,6 @@ li a:hover {
     padding-bottom: 10px;
     text-align: center;
     width: 100%;
-    bottom: 0;
-    overflow: hidden;
     font-size: 9pt;
     background-color: #77a6f7;
     color: #ffffff;

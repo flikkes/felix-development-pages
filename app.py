@@ -1,8 +1,10 @@
+import os.path
 from flask import Flask, render_template, url_for, Markup
 from flask_talisman import Talisman
 
 app = Flask(__name__)
-Talisman(app)
+if not os.path.isfile("local_dev_environment.flagfile"):
+    Talisman(app)
 
 
 @app.route("/")
