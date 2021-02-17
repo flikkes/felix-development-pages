@@ -10,7 +10,7 @@ if not os.path.isfile("local_dev_environment.flagfile"):
 @app.route("/")
 def home():
     active_link = "home"
-    home_caption = "Welcome"
+    home_caption = "Felix Development and Consulting"
     home_content = Markup(
         """
         Welcome to my development and consulting space. 
@@ -25,7 +25,7 @@ def home():
 @app.route("/courses")
 def courses():
     active_link = "courses"
-    home_caption = "Welcome"
+    home_caption = "Felix Development and Consulting"
     home_content = Markup(
         """
         Welcome to my development and consulting space. 
