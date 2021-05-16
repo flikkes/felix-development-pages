@@ -49,8 +49,8 @@ def products():
         specific formats into a generic format while covering a large variety of database systems. 
         In the current version only MySQL and MongoDB are supported. My plan is to enhance functionality and gradually increase the number of supported 
         database systems. <br><br>
-        While the free version will continue to receive important updates I'll start to ship an 
-        advanced version of the software which can be purchased. This Version will include advanced functionality, 
+        While the standard open source version will continue to receive important updates I'll start to develop an 
+        advanced version of the software which will be available soon. This Version will include advanced functionality, 
         stable and experimental API and other special features. <br><br>
         If you have any questions or want to suggest something 
         I should include in future updates, feel free to contact me at <a href="mailto:lpke.flx@gmail.com">lpke.flx@gmail.com</a>. 
