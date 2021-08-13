@@ -59,6 +59,11 @@ li a:hover {
     color: #77a6f7;
 }
 
+.fd-disclaimer {
+    font-size: small;
+    color: orangered;
+}
+
 .fd-menu-list {
     list-style-type: none;
     margin: 0;
