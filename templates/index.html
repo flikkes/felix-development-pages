@@ -11,20 +11,18 @@
     <header class="fd-header">
         <nav>
             <ul class="fd-menu-list">
-                <li class="fd-menu-item"><a class="{{'fd-active-menu-item' if active_link == 'home'}}" href="/">Home</a>
+                {% for item in items %}
+                <li class="fd-menu-item"><a class="{{'fd-active-menu-item' if active_link == item}}" href="/{{item}}">{{ item }}</a>
                 </li>
-                <li class="fd-menu-item"><a class="{{'fd-active-menu-item' if active_link == 'courses'}}"
-                        href="/courses">Courses</a></li>
-                <li class="fd-menu-item"><a class="{{'fd-active-menu-item' if active_link == 'products'}}"
-                        href="/products">Products</a></li>
+                {% endfor %}
             </ul>
         </nav>
     </header>
     <div class="fd-content-wrapper">
         <div class="fd-content">
             <p class="fd-disclaimer">Disclaimer: around November and December my products will become available. Stay tuned!</p>
-            <h1>{{ home_caption }}</h1>
-            {{ home_content }}
+            <h1>{{ caption }}</h1>
+            {{ content }}
         </div>
     </div>
     <footer class="fd-footer">Felix Development and Consulting - Contact: Felix Lüpke &lt;lpke.flx@gmail.com&gt;

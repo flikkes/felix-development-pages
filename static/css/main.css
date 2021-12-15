@@ -73,6 +73,7 @@ li a:hover {
 .fd-menu-item {
     display: inline;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .fd-header {
