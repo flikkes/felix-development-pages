@@ -1,10 +1,10 @@
-<!doctype HTML>
+<!DOCTYPE HTML>
 <html>
 
 <head>
     <title>Felix Development and Consulting</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 </head>
 
 <body>
@@ -25,7 +25,12 @@
             {{ content }}
         </div>
     </div>
-    <footer class="fd-footer">Felix Development and Consulting - Contact: Felix Lüpke &lt;lpke.flx@gmail.com&gt;
+    <footer class="fd-footer">Felix Development and Consulting - Contact: Felix Lüpke &lt;lpke.flx@gmail.com&gt;<br>
+        <ul>
+            {% for footer_item in footer_items %}
+            <li class="fd-footer-link"><a href="/footer-links/{{footer_item}}">{{footer_item}}</a></li>
+            {% endfor %}
+        </ul>
     </footer>
 </body>
 

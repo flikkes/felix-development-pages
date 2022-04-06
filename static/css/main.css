@@ -111,6 +111,13 @@ li a:hover {
     font-size: 9pt;
     background-color: #77a6f7;
     color: #ffffff;
+    list-style-type: none;
+}
+
+.fd-footer-link {
+    display: inline;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 @media screen and (max-width: 600px) {
